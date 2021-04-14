@@ -1,0 +1,30 @@
+{
+    "typescript.preferences.quoteStyle": "double",
+    "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": true,
+    "auto-close-tag.activationOnLanguage": [
+
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist"
+    ],
+    "editor.linkedEditing": true
+}

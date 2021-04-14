@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Satellite } from '../satellite';
 
 @Component({
   selector: 'app-orbit-list',
@@ -6,10 +7,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./orbit-list.component.css']
 })
 export class OrbitListComponent implements OnInit {
+  @Input() satellites: Satellite[];
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+    // tslint:disable-next-line:no-unused-expression
+
+  }
+sort(column: string) void {
+    // array.sort modifies the array, sorting the items based on the given compare function
+    // tslint:disable-next-line:only-arrow-functions
+    this.satellites.sort(function(a: Satellite, b: Satellite): number {
+       if(a[column] < b[column]) {
+          return -1;
+       } else if (a[column] > b[column]) {
+          return 1;
+       }
+       return 0;
+    }),
+  }
 }
+function sort(column: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
+function column(column: any, string: any) {
+  throw new Error('Function not implemented.');
+}
+
